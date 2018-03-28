@@ -1,0 +1,348 @@
+$transition: all 0.3s ease
+
+
+/* Main style */
+body
+  margin: 0
+  padding: 0
+  font-family: GothamProMed
+
+a
+  transition: $transition
+  outline: none !important
+
+  &:hover
+    text-decoration: none !important
+    opacity: 0.8
+
+ul, ol
+  margin: 0
+  padding: 0
+  counter-reset: item
+
+  li
+    counter-increment: item
+
+.modal-btn
+  cursor: pointer
+
+.text-left
+  text-align: left !important
+
+.text-right
+  text-align: right !important
+
+.text-center
+  text-align: center !important
+
+.color-white
+  color: #fff !important
+
+.color-black
+  color: #212121 !important
+
+.color-gray
+  color: #9fa3a7 !important
+
+.bg
+  background-repeat: no-repeat
+  background-position: top center
+  background-size: cover
+
+.btn
+  border-radius: 50px
+  display: inline-block
+  padding: 0 40px
+  height: 60px
+  line-height: 60px
+  font-family: GothamProMed
+  font-size: 14px
+  color: #272727
+  margin-top: 30px
+  cursor: pointer
+  transition: $transition
+
+  &-yellow
+    background-color: #fed750
+
+  &:hover
+    opacity: 0.8
+
+/* Main style to all sections ::start */
+.section
+  .text
+    font-family: OpenSans
+    color: #fff
+    font-size: 16px
+    line-height: 24px
+    margin-bottom: 25px
+
+  .article
+    margin-bottom: 50px
+    line-height: 56px
+    color: #212121
+    font-size: 40px
+    font-family: GothamProMed
+
+  .blockquote
+    color: #212121
+    font-family: GothamProMed
+    line-height: 40px
+    font-size: 24px
+    padding: 50px 0
+    border-top: 1px solid #e9e9e9
+    border-bottom: 1px solid #e9e9e9
+    margin-top: 70px
+
+/* Main style to all sections ::end */
+
+/* HEADER */
+.header
+  padding-top: 55px
+  padding-bottom: 55px
+  position: fixed
+  width: 100%
+  top: 0
+  left: 0
+  box-sizing: border-box
+  z-index: 100
+  transition: $transition
+
+  &.fix
+    padding-top: 16px
+    padding-bottom: 10px
+    background-color: rgba(0, 0, 0, 0.7)
+
+  .logo
+    display: inline-block
+
+  .text
+    font-size: 14px
+    font-family: GothamProMed
+    color: #fff
+    margin-bottom: 0
+    line-height: 16px
+
+  .send-price
+    display: inline-block
+    font-family: GothamProMed
+    text-transform: uppercase
+    font-size: 16px
+    color: #fff
+    letter-spacing: 2px
+
+    &:before
+      content: url('../images/file.svg')
+      display: inline-block
+      vertical-align: top
+      margin-right: 15px
+
+    &:after
+      content: ''
+      width: 4px
+      height: 4px
+      background-color: #fff
+      border-radius: 100%
+      margin: 0 20px
+      display: inline-block
+      vertical-align: middle
+
+  .link-phone
+    font-family: GothamProMed
+    color: #fff
+    letter-spacing: 2px
+    text-transform: uppercase
+    display: inline-block
+    vertical-align: middle
+
+/* SECTION 1 */
+.section1
+  padding-top: 231px
+  padding-bottom: 137px
+
+  .top-text
+    font-family: GothamProMed
+    color: #fff
+    font-size: 16px
+    display: inline-block
+    margin-bottom: 25px
+    line-height: normal
+
+    &:before
+      content: ''
+      width: 70px
+      height: 2px
+      background-color: #fff
+      margin-right: 12px
+      display: inline-block
+      vertical-align: middle
+
+  .h1
+    color: #fff
+    font-size: 30px
+    line-height: 40px
+    font-family: GothamPro
+    margin-bottom: 30px
+    text-transform: uppercase
+
+  .text
+    max-width: 370px
+    margin-bottom: 0
+    font-family: GothamProMed
+
+  ol
+    margin-top: 30px
+
+    li
+      list-style: none
+      font-size: 16px
+      font-family: GothamProMed
+      color: #fff
+      line-height: 24px
+      margin-bottom: 25px
+      display: block
+
+      &:before
+        content: "0" counter(item)
+        font-family: GothamPro
+        margin-bottom: 10px
+        display: block
+        opacity: 0.5
+        text-transform: uppercase
+        font-size: 18px
+
+.section2
+  padding-top: 80px
+
+.section3
+  padding: 100px 0
+
+.section4
+  .item
+    margin-bottom: 75px
+
+    .imagebox
+      border-radius: 6px
+      overflow: hidden
+      position: relative
+      z-index: 40
+
+    .number-list
+      .right-container
+        position: relative
+        z-index: 40
+
+        .article
+          font-size: 22px
+          color: #212121
+          font-family: GothamProMed
+          margin-bottom: 10px
+
+      &:before
+        content: ''
+        position: absolute
+        top: -50px
+        z-index: 10
+        color: #f6f6f6
+        font-family: Montserrat
+        font-size: 390px
+        line-height: normal
+
+      &.num1
+        &:before
+          content: '01'
+
+      &.num2
+        &:before
+          content: '02'
+
+      &.num3
+        &:before
+          content: '03'
+
+      &.num4
+        &:before
+          content: '04'
+
+      &.num5
+        &:before
+          content: '05'
+
+      &.num6
+        &:before
+          content: '06'
+
+      &.num7
+        &:before
+          content: '07'
+
+      &.num8
+        &:before
+          content: '08'
+
+    &.item-left
+      .number-list
+        &:before
+          left: -150px
+
+        .right-container
+          padding-left: 40px
+
+    &.item-right
+      .number-list
+        &:before
+          left: -50px
+
+        .right-container
+          padding-right: 40px
+
+.section5
+  background-color: #8d76be
+  padding: 70px 0
+
+  .item
+    margin-bottom: 50px
+
+    .icon
+      width: 60px
+      height: 60px
+      margin-bottom: 15px
+      border-radius: 100%
+      background-color: rgba(0, 0, 0, 0.1)
+      text-align: center
+      line-height: 60px
+
+      &:before
+        position: relative
+        top: 5px
+
+      &.icon1:before
+        content: url('../images/trending-up.svg')
+
+      &.icon2:before
+        content: url('../images/percent.svg')
+
+      &.icon3:before
+        content: url('../images/card.svg')
+
+      &.icon4:before
+        content: url('../images/chart.svg')
+
+      &.icon5:before
+        content: url('../images/clock.svg')
+
+      &.icon6:before
+        content: url('../images/navigation.svg')
+
+    .article
+      font-family: GothamProMed
+      font-size: 18px
+      color: #fff
+      margin-bottom: 12px
+      line-height: 24px
+
+    .text
+      margin-bottom: 0
+
+.section6
+  padding: 100px 0

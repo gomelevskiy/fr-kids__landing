@@ -1,16 +1,14 @@
-$(document).on("scroll", function() {
 
-    $(function () {
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                $('.header').addClass('fix');
-            } else {
-                $('.header').removeClass('fix');
-            }
-        });
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.header').addClass('fix');
+        } else {
+            $('.header').removeClass('fix');
+        }
     });
-
 });
+
 
 $(document).ready(function() {
 

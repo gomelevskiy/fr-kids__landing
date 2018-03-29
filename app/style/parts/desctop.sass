@@ -150,7 +150,17 @@ ul, ol
   &.fix
     padding-top: 16px
     padding-bottom: 10px
-    background-color: rgba(0, 0, 0, 0.7)
+    background-color: #fff
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05)
+
+    .send-price
+      color: #212121
+
+      &:after
+        background-color: #212121
+
+    .link-phone
+      color: #212121
 
   .logo
     display: inline-block
@@ -170,12 +180,13 @@ ul, ol
     color: #fff
     letter-spacing: 2px
     margin-top: 22px
+    transition: $transition
 
-    &:before
-      content: url('../images/file.svg')
-      display: inline-block
-      vertical-align: top
-      margin-right: 15px
+    //&:before
+    //  content: url('../images/file.svg')
+    //  display: inline-block
+    //  vertical-align: top
+    //  margin-right: 15px
 
     &:after
       content: ''
@@ -186,6 +197,7 @@ ul, ol
       margin: 0 20px
       display: inline-block
       vertical-align: middle
+      transition: $transition
 
   .link-phone
     font-family: GothamProMed
@@ -194,6 +206,7 @@ ul, ol
     text-transform: uppercase
     display: inline-block
     vertical-align: middle
+    transition: $transition
 
 /* SECTION 1 */
 .section1
@@ -501,6 +514,9 @@ ul, ol
       &.current
         &:before
           background-color: #7fb9ba
+
+        span
+          color: #7fb9ba
 
       &:hover
         opacity: 1

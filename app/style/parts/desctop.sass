@@ -6,6 +6,7 @@ body
   margin: 0
   padding: 0
   font-family: GothamProMed
+  overflow-x: hidden
 
 a
   transition: $transition
@@ -22,6 +23,26 @@ ul, ol
 
   li
     counter-increment: item
+
+.btn-mobile, .close-modal-btn
+  display: none
+  visibility: hidden
+  opacity: 0
+
+.pos-a
+  position: absolute
+
+  &.item-parallax__1
+    bottom: 0px
+    right: -200px
+
+  &.item-parallax__2
+    bottom: 100px
+    left: -50px
+
+  &.item-parallax__3
+    top: 0px
+    right: -120px
 
 .modal-btn
   cursor: pointer
@@ -70,6 +91,8 @@ ul, ol
 
 /* Main style to all sections ::start */
 .section
+  position: relative
+
   .text
     font-family: OpenSans
     color: #fff
@@ -130,6 +153,7 @@ ul, ol
     font-size: 16px
     color: #fff
     letter-spacing: 2px
+    margin-top: 22px
 
     &:before
       content: url('../images/file.svg')
@@ -167,6 +191,13 @@ ul, ol
     display: inline-block
     margin-bottom: 25px
     line-height: normal
+    position: relative
+
+    span
+      display: inline-block
+      vertical-align: middle
+      padding-left: 100px
+      line-height: 20px
 
     &:before
       content: ''
@@ -175,6 +206,10 @@ ul, ol
       background-color: #fff
       margin-right: 12px
       display: inline-block
+      position: absolute
+      left: 0
+      top: 50%
+      margin-top: -1px
       vertical-align: middle
 
   .h1
@@ -346,3 +381,334 @@ ul, ol
 
 .section6
   padding: 100px 0
+
+  .text
+    max-width: 600px
+    color: #9fa3a7
+    line-height: 38px
+    margin: 0 auto 60px
+    font-size: 26px
+
+  .image
+    margin: 0 auto
+
+  .tab-article
+    color: #212121
+    font-family: GothamProMed
+    font-size: 26px
+    margin-bottom: 50px
+    display: block
+    text-align: center
+    line-height: 42px
+
+  .tabs-formats
+    &__point
+      width: 33%
+      float: left
+      color: #8d76be
+      font-family: GothamProMed
+      padding-bottom: 18px
+      text-transform: uppercase
+      text-align: center
+      border-bottom: 2px solid #f6f6f6
+      margin-bottom: 40px
+
+      &.current
+        border-bottom: 2px solid #8d76be
+
+    .tabs_content
+      &__col
+        float: left
+        width: 50%
+        box-sizing: border-box
+        overflow: hidden
+
+        &.col-left
+          padding-left: 90px
+
+        &.col-right
+          padding-left: 60px
+
+        .text
+          font-family: OpenSans
+          color: #9fa3a7
+          margin-bottom: 35px
+          line-height: 32px
+          font-size: 16px
+          text-align: left
+
+          strong, b, .bold
+            color: #131313
+
+          span
+            color: #57b9bb
+
+.section7
+  padding: 117px 0
+
+  .item
+    .icon
+      width: 76px
+      height: 76px
+      margin: 0 auto 15px
+      border-radius: 100%
+      background-color: #49a8aa
+      text-align: center
+      line-height: 76px
+
+    .article
+      font-family: GothamProMed
+      color: #fff
+      margin-bottom: 12px
+      font-size: 18px
+      line-height: 24px
+
+.section8
+  padding: 100px 0
+
+  .tabs-steps
+    counter-reset: item
+
+    &__point
+      width: 20%
+      display: inline-block
+      float: left
+      color: #212121
+      text-transform: uppercase
+      font-size: 10px
+      font-family: GothamPro
+      line-height: 16px
+      letter-spacing: 2px
+      counter-increment: item
+      margin-bottom: 48px
+
+      &.current
+        &:before
+          background-color: #7fb9ba
+
+      &:hover
+        opacity: 1
+
+      &:before
+        content: counter(item)
+        background-color: #8f75be
+        width: 30px
+        height: 30px
+        border-radius: 100%
+        line-height: 30px
+        text-align: center
+        font-family: Montserrat
+        color: #fff
+        font-size: 12px
+        display: block
+        margin: 0 auto 10px
+        position: relative
+        z-index: 18
+        transition: $transition
+
+      &:after
+        content: ''
+        width: 100%
+        height: 2px
+        background-color: #8d76be
+        position: absolute
+        top: 15px
+        left: 0
+        z-index: 12
+
+      span
+        text-decoration: underline
+        text-decoration-style: dashed
+        transition: $transition
+
+.section9
+  padding: 100px 0
+
+  .reviews-item
+    margin-bottom: 77px
+
+    &__person
+      margin-bottom: 32px
+
+      .userpic
+        width: 64px
+        height: 64px
+        border-radius: 100%
+        border: 1px solid #e8e8e8
+        margin-right: 18px
+        display: inline-block
+        vertical-align: middle
+
+      .info
+        display: inline-block
+        vertical-align: middle
+
+        .name
+          color: #212121
+          text-transform: uppercase
+          letter-spacing: 2px
+          font-family: GothamPro
+          margin-bottom: 12px
+          font-size: 14px
+
+        .state
+          text-transform: uppercase
+          color: #9fa3a7
+          letter-spacing: 2px
+          font-size: 14px
+          font-family: GothamProMed
+
+    &__container
+      .text
+        line-height: 32px
+        color: #9fa3a7
+
+      .video
+        display: block
+        position: relative
+
+        &:before
+          content: url("../images/player.svg")
+          position: absolute
+          left: 0
+          right: 0
+          top: 50%
+          margin-top: -58px
+          text-align: center
+
+        img
+          width: 100%
+          height: inherit
+
+.footer
+  padding: 75px 0
+  background-color: #7fb9ba
+
+  .article
+    margin-bottom: 15px
+
+  .text
+    margin-bottom: 35px
+
+/* Modal form */
+.modal-form
+  max-width: 400px
+  margin: 0 auto
+
+  .modal-form__box
+    position: relative
+    margin-bottom: 50px
+
+  .modal-input
+    width: 100%
+    color: rgba(255, 255, 255, 0.3)
+    font-size: 14px
+    font-family: OpenSans
+    height: 31px
+    line-height: 31px
+    padding: 0
+    border-top: none
+    border-left: none
+    border-right: none
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+    -webkit-box-shadow: none
+    box-shadow: none
+    outline: none
+    background: transparent
+    -webkit-transition: all 0.1s ease-in-out
+    transition: all 0.1s ease-in-out
+
+  .modal-input.filled
+    border-bottom: 1px solid #fff
+
+  .modal-input:focus ~ label,.modal-input.filled ~ label
+    bottom: 30px
+    color: rgba(255, 255, 255, 1)
+    font-size: 12px
+
+  .modal-input:focus ~ .bar:before,.modal-input:focus ~ .bar:after
+    width: 50%
+
+  .modal-input:valid
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+
+  .modal-input:valid ~ .bar:before,.modal-inputvalid ~ .bar:after
+    background: rgba(255, 255, 255, 1)
+
+  .modal-label
+    font-size: 14px
+    font-family: OpenSans
+    margin-bottom: 0
+    bottom: 10px
+    left: 0
+    position: absolute
+    pointer-events: none
+    color: rgba(255, 255, 255, 0.3)
+    -webkit-transition: 0.1s ease-in-out
+    transition: 0.1s ease-in-out
+
+  .checkbox-private
+    display: block
+    vertical-align: middle
+    color: #fff
+    font-family: OpenSans
+    font-size: 14px
+    margin: 0px auto 40px
+    width: 100%
+    text-align: left
+    position: relative
+
+  .checkbox-private_checkbox-royal
+    display: inline-block
+    padding-left: 40px
+
+  .checkbox-private_checkbox-old
+    position: absolute
+    top: 0px
+    visibility: hidden
+    z-index: 8
+    width: 24px
+    height: 24px
+
+  .checkbox-private_checkbox-old:checked ~ .checkbox-private_checkbox-new
+    background-image: url("../images/arrow-checkbox.svg")
+    background-repeat: no-repeat
+    background-position: center
+
+  .checkbox-private_checkbox-new
+    width: 24px
+    height: 24px
+    border: 1px solid #fff
+    vertical-align: middle
+    margin-right: 10px
+    display: inline-block
+    position: absolute
+    top: 0px
+
+  .checkbox-private a
+    color: #fff
+    font-size: 14px
+    text-decoration: underline
+    padding-bottom: 2px
+    font-family: OpenSans
+
+/* Modal */
+.modal-container-window
+  padding: 30px
+  background-color: #7fb9ba
+
+  .modal-content
+    border: none
+    background-color: #7fb9ba
+    text-align: center
+
+    .text
+      color: #fff
+      margin-bottom: 35px
+
+    .btn
+      width: 235px
+      margin: 0 auto
+
+
+

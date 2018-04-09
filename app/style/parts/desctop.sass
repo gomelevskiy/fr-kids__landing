@@ -24,6 +24,15 @@ ul, ol
   li
     counter-increment: item
 
+.btn-modal
+  cursor: pointer
+
+.close-modal-btn
+  cursor: pointer
+
+  &:hover
+    opacity: 0.8
+
 .btn-mobile
   display: none
   visibility: hidden
@@ -80,6 +89,9 @@ ul, ol
 
 .color-gray
   color: #9fa3a7 !important
+
+.color-green
+  color: #7fb9ba !important
 
 .bg
   background-repeat: no-repeat
@@ -301,6 +313,7 @@ ul, ol
 
         .article
           font-size: 22px
+          line-height: 32px
           color: #212121
           font-family: GothamProMed
           margin-bottom: 10px
@@ -729,9 +742,13 @@ ul, ol
   .checkbox-private a
     color: #fff
     font-size: 14px
-    text-decoration: underline
+    text-decoration: none
     padding-bottom: 2px
     font-family: OpenSans
+    border-bottom: 1px solid #fff
+
+    &:hover
+      border-bottom: 1px solid transparent
 
 /* Modal */
 .modal-container-window

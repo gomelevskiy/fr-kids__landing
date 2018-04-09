@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>message-circle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="message-circle" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF" stroke-width="2">
+            <path d="M24,11.3333333 C24.0045883,13.0931571 23.5934251,14.8291794 22.8,16.4 C20.8812788,20.2391037 16.9585433,22.6650059 12.6666667,22.6666667 C10.9068429,22.671255 9.17082056,22.2600918 7.6,21.4666667 L0,24 L2.53333333,16.4 C1.73990819,14.8291794 1.328745,13.0931571 1.33333333,11.3333333 C1.33499408,7.04145665 3.76089629,3.11872116 7.6,1.2 C9.17082056,0.406574853 10.9068429,-0.00458833628 12.6666667,5.32907729e-15 L13.3333333,5.32907729e-15 C19.0877459,0.317466255 23.6825337,4.9122541 24,10.6666667 L24,11.3333333 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

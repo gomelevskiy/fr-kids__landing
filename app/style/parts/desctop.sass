@@ -88,7 +88,7 @@ ul, ol
   color: #212121 !important
 
 .color-gray
-  color: #9fa3a7 !important
+  color: #686c6f !important
 
 .color-green
   color: #7fb9ba !important
@@ -388,7 +388,7 @@ ul, ol
       height: 60px
       margin-bottom: 15px
       border-radius: 100%
-      background-color: rgba(0, 0, 0, 0.1)
+      background-color: #fed750
       text-align: center
       line-height: 60px
 
@@ -429,7 +429,7 @@ ul, ol
 
   .text
     max-width: 600px
-    color: #9fa3a7
+    color: #686c6f
     line-height: 38px
     margin: 0 auto 60px
     font-size: 26px
@@ -476,7 +476,7 @@ ul, ol
 
         .text
           font-family: OpenSans
-          color: #9fa3a7
+          color: #686c6f
           margin-bottom: 35px
           line-height: 32px
           font-size: 16px
@@ -520,9 +520,9 @@ ul, ol
       float: left
       color: #212121
       text-transform: uppercase
-      font-size: 10px
+      font-size: 11px
       font-family: GothamPro
-      line-height: 16px
+      line-height: 20px
       letter-spacing: 2px
       counter-increment: item
       margin-bottom: 48px
@@ -540,14 +540,14 @@ ul, ol
       &:before
         content: counter(item)
         background-color: #8f75be
-        width: 30px
-        height: 30px
+        width: 36px
+        height: 36px
         border-radius: 100%
-        line-height: 30px
+        line-height: 36px
         text-align: center
         font-family: Montserrat
         color: #fff
-        font-size: 12px
+        font-size: 14px
         display: block
         margin: 0 auto 10px
         position: relative
@@ -607,7 +607,7 @@ ul, ol
 
         .state
           text-transform: uppercase
-          color: #9fa3a7
+          color: #686c6f
           letter-spacing: 2px
           font-size: 14px
           font-family: GothamProMed
@@ -615,11 +615,12 @@ ul, ol
     &__container
       .text
         line-height: 32px
-        color: #9fa3a7
+        color: #686c6f
 
       .video
         display: block
         position: relative
+        margin-top: 30px
 
         &:before
           content: url("../images/player.svg")
@@ -629,10 +630,15 @@ ul, ol
           top: 50%
           margin-top: -58px
           text-align: center
+          cursor: pointer
 
         img
           width: 100%
           height: inherit
+
+        &.play
+          &:before
+            display: none
 
 .footer
   padding: 75px 0

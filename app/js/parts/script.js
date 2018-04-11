@@ -67,12 +67,12 @@ $(document).ready(function() {
 
     $(".tabs-steps>a:first").trigger("click");
 
-    var frameVideo1 = "<iframe width=\"920\" height=\"510\" src=\"https://www.youtube.com/embed/YBNrC8OpBAo?rel=0&amp;controls=0&amp;showinfo=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>";
+    var frameVideo1 = "<iframe width=\"920\" height=\"510\" src=\"https://www.youtube.com/embed/YBNrC8OpBAo?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>";
     $(".video1").on("click", function(){
         $(".video1").html(frameVideo1).addClass("play");
     });
 
-    var frameVideo2 = "<iframe width=\"920\" height=\"510\" src=\"https://www.youtube.com/embed/rtbcUVC5zk4?rel=0&amp;controls=0&amp;showinfo=0\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>";
+    var frameVideo2 = "<iframe width=\"920\" height=\"510\" src=\"https://www.youtube.com/embed/rtbcUVC5zk4?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>";
     $(".video2").on("click", function(){
         $(".video2").html(frameVideo2).addClass("play");
     });

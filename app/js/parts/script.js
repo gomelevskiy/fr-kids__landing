@@ -77,4 +77,54 @@ $(document).ready(function() {
         $(".video2").html(frameVideo2).addClass("play");
     });
 
+    // validation
+    $(".signup").each(function () {
+        $(this).validate({
+            rules: {
+                firstName: {
+                    required: true
+
+                },
+                phone: {
+                    required: true
+
+                },
+                email: {
+                    required: false,
+                    email: true
+
+                }
+
+            },
+            messages: {
+                firstName: {
+                    required: ""
+
+                },
+                phone: {
+                    required: ""
+
+                },
+                email: {
+                    required: "",
+                    email: "Не корректный E-mail"
+
+                }
+
+            },
+            submitHandler: function (form) {
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php",
+                    data: $(form).serialize()
+                }).done(function () {
+                    alert("Finish");
+                    $("form").trigger("reset");
+
+                });
+                return false;
+            }
+        });
+    });
+
 });

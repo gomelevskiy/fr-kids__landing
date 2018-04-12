@@ -2,4 +2,5 @@
 //= parts/bootstrap.min.js
 //= parts/jquery.maskedinput.min.js
 //= parts/rellax.min.js
+//= parts/validate.min.js
 //= parts/script.js
